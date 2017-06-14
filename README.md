@@ -9,7 +9,8 @@
 
 2--to build the Angular project 
 * ng build --prod 
-3—to build the angular project for github  
+
+3--to build the angular project for github  
 * ng build --prod --base-href https://alextelespanwork.github.io/my-cool-proj/
 
 ## To create a new repository:
@@ -27,16 +28,14 @@
 * git status
 
 2--to add files to the staging repo 
-	- to add one file
-	* git add <filename>
-	- to add all files
-	* git add . 
+* git add <filename> (to add one file)
+* git add . (to add all files)
 
 3--commit the changes
 * git commit -m "Your message about the commit"
 
 4--to discard the changes
-* git checkout --<filename>
+* git checkout --(filename)
 
 5--to push on that branch
 * git push -u origin master
@@ -89,27 +88,29 @@ OR
 
 5--discarding all local commits on this branch [Removing local commits]
 * git reset --hard origin/master [if local branch is master]
+
 6--revert a commit already pushed to a remote repository
 * git revert ab12cd15
 
 ## Delete a previous commit from local branch and remote branch:
-1-- deleting that commit from local branch
+1--deleting that commit from local branch
 *git reset --hard HEAD~1
+
 2--for deleting from remote branch, both the above and the following must be executed
 * git push origin HEAD –force
 
 ## Remove local git merge:
 Master branch merged with a newly working branch phase2:
 * git status
-- On branch master
+* --On branch master
 * git merge phase2
 * git status
-- On branch master
-- Your branch is ahead of 'origin/master' by 8 commits.
+* --On branch master
+* --Your branch is ahead of 'origin/master' by 8 commits.
 
 1--to remove the merge
 * git reset --hard origin/master
-OR
+    OR
 * git reset --hard HEAD~8
-OR 
+    OR 
 * git reset --hard 9a88396f51e2a068bb7 [this is the one that was present before all your merge commits happened]
