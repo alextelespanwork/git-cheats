@@ -50,6 +50,15 @@
 8--command to see all new commits
 * git log
 
+9--to make your local files changed to be like they were at a specific commit, but leave your history etc. the same. (does not touch the index file nor the working tree at all (but resets the head to <commit>, just like all modes do). This leaves all your changed files "Changes to be committed", as git status would put it.)
+* git reset --soft c14809fafb08b9e96ff2879999ba8c807d10fb07
+
+10--to make your local code and local history be just like it was at that commit. But then if you wanted to push this to someone else who has the new history, it would fail.
+* git reset --hard c14809fa
+
+11--
+* git reset c14809fafb08b9e96ff2879999ba8c807d10fb07
+
 ## New Branch:
 1--create a branch (git will move you to that branch, off of the master branch)
 * git checkout -b <my branch name>
