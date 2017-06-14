@@ -116,8 +116,9 @@ Master branch merged with a newly working branch phase2:
     OR 
 * git reset --hard 9a88396f51e2a068bb7 [this is the one that was present before all your merge commits happened]
 
-#Stashing Your Work 
+## Stashing Your Work 
 <a href="https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning">More Details</a>
+
 By default, git stash will only store files that are already in the index. If you specify --include-untracked or -u, Git will also stash any untracked files you have created.
 
 1--Stash the changes
@@ -127,7 +128,8 @@ By default, git stash will only store files that are already in the index. If yo
 2--To list the stashes
 * git stash list
 
-When having multiple stashes, you can reapply the one you just stashed by using the command shown in the help output of the original stash command: git stash apply. If you want to apply one of the older stashes, you can specify it by naming it, like this: git stash apply stash@{2}
+When having multiple stashes, you can reapply the one you just stashed by using the command shown in the help output of the original stash command: git stash apply. If you want to apply one of the older stashes, you can specify it by naming it, like this: 
+* git stash apply stash@{2}
 
 3--to tell the command to try to reapply the staged changes
 * git stash apply --[filename]
