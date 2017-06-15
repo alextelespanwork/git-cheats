@@ -137,7 +137,7 @@ By default, git stash will only store files that are already in the index. If yo
 2--To list the stashes
 * git stash list
 
-3--To check the contents of a stash
+3--To check the contents of a stash (does a diff between the stash files and the current files and if there is no difference, then it returns nothing)
 * git stash show -p stash@{1}
 
 When having multiple stashes, you can reapply the one you just stashed by using the command shown in the help output of the original stash command: git stash apply. If you want to apply one of the older stashes, you can specify it by naming it, like this: 
