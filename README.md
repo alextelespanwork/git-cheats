@@ -1,6 +1,7 @@
 # git-cheats
-## GIT Cheats
 
+## Angular CLI
+ 
 1--to install angular-cli-ghpages package (used for building and displaying your webpage on github):
 * npm i -g angular-cli-ghpages
 
@@ -12,6 +13,8 @@
 
 3--to build the angular project for github  
 * ng build --prod --base-href https://alextelespanwork.github.io/my-cool-proj/
+
+## GIT Cheats
 
 ## To create a new repository:
 1--login to your github.com account and create a new repository for your Angular project.
