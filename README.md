@@ -4,15 +4,19 @@
  
 1--to install angular-cli-ghpages package (used for building and displaying your webpage on github):
 * npm i -g angular-cli-ghpages
-
-!!!You're only able to use the angular-cli-ghpages CLI if you have a /dist folder. If you do, you can then run: 
-* ngh  
+* npm i --save-dev angular-cli-ghpages
 
 2--to build the Angular project 
 * ng build --prod 
 
-3--to build the angular project for github  
+3--to build the angular project for github using angular cli 
 * ng build --prod --base-href https://alextelespanwork.github.io/my-cool-proj/
+
+4--!!!You're only able to use the angular-cli-ghpages CLI if you have a /dist folder. If you do, you can then run: 
+* ngh  
+* ngh --no-silent  (this spits out more logging)
+
+-- In order to see your page after you've built it, go to your project on github => Settings => Options => Github Pages => Change the Source to gh-pages branch
 
 # GIT Cheats
 
