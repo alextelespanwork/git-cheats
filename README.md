@@ -15,6 +15,12 @@
 4--!!!You're only able to use the angular-cli-ghpages CLI if you have a /dist folder. If you do, you can then run: 
 * ngh  
 * ngh --no-silent  (this spits out more logging)
+* ngh --message="First deploy" (add a message to the commit when deploying)
+* ngh --branch=production (specify which branch to deploy)
+* ngh --dry-run (dry run before actually deploying to see the output)
+
+The Single-Page App Hack for GitHub Pages (You might get 404 Not Found without this hack)
+http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
 
 -- In order to see your page after you've built it, go to your project on github => Settings => Options => Github Pages => Change the Source to gh-pages branch
 
