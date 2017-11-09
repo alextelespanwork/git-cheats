@@ -30,7 +30,7 @@ This will copy from the dist folder and create (or modify) a _site/ directory, c
 
 #### "Serving" the site
 
-This will first run build, and so it does not need to be preceded by jekyll build. Make sure you run first: **ng build**
+This will first run build, and so it does not need to be preceded by jekyll build. Make sure you first run: **ng build**. Also you will need to serve from the **dist** folder, so make sure after the *ng build* to run **cd dist**. 
 * jekyll serve
 
 Your website will be served at: [http://localhost:4000](http://localhost:4000)
