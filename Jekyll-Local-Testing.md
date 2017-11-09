@@ -35,5 +35,4 @@ This will first run build, and so it does not need to be preceded by jekyll buil
 
 #### Observation:
 
-Building the dist folder with the following command will make the server to serve the website from the wrong base-href. That is why when testing locally, you only build your site using "ng build": 
-ng build --prod --base-href https://alextelespanwork.github.io/my-cool-proj/
+Building the dist folder with *ng build --prod --base-href https://alextelespanwork.github.io/my-cool-proj/* will make the server to serve the website from the wrong base-href. That is why when testing locally, you only build your site using *ng build*. 
