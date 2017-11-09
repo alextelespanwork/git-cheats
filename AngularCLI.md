@@ -25,4 +25,6 @@
 The Single-Page App Hack for GitHub Pages (You might get 404 Not Found without this hack)
 http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
 
--- In order to see your page after you've built it, go to your project on github => Settings => Options => Github Pages => Change the Source to gh-pages branch
+--------------------------------------
+
+##### In order to see your page after you've built it, go to your project on github => Settings => Options => Github Pages => Change the Source to gh-pages branch
