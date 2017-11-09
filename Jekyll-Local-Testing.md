@@ -33,6 +33,8 @@ This will copy from the dist folder and create (or modify) a _site/ directory, c
 This will first run build, and so it does not need to be preceded by jekyll build. Make sure you run first: **ng build**
 * jekyll serve
 
+Your website will be served at: [http://localhost:4000](http://localhost:4000)
+
 #### Observation:
 
 Building the dist folder with *ng build --prod --base-href https://alextelespanwork.github.io/my-cool-proj/* will make the server to serve the website from the wrong base-href. That is why when testing locally, you only build your site using *ng build*. 
