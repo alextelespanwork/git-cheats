@@ -28,16 +28,16 @@ http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-gith
 
 ## Testing your site locally before building on github
 
-To test your site locally, you’ll need:
+#### To test your site locally, you’ll need:
 - ruby
 - the github-pages gem
 
-## Installing ruby
+#### Installing ruby
 
 In Mac OS X, older versions of ruby will already be installed. Use the Ruby Version Manager (RVM) to have a more recent version.
 In Windows, use RubyInstaller. 
 
-## Installing the github-pages gem
+#### Installing the github-pages gem
 
 Run the following command:
 * gem install github-pages
@@ -46,20 +46,22 @@ This will install the github-pages gem and all dependencies (including jekyll).
 To update the gem, type:
 * gem update github-pages
 
-## Testing your site locally
+#### Testing your site locally
 
 To construct and test your site locally, go into the directory and type
 * ng build
+
 This will create the dist folder. Then type:
 * jekyll build
+
 This will copy from the dist folder and create (or modify) a _site/ directory, containing everything from assets/, and then the index.md and all pages/*.md files, converted to html. (So there’ll be _site/index.html and the various _site/pages/*.html.)
 
-## "Serving" the site
+#### "Serving" the site
 
-This will first run build, and so it does not need to be preceded by jekyll build. Make sure you run first: "ng build"
+This will first run build, and so it does not need to be preceded by jekyll build. Make sure you run first: **ng build**
 * jekyll serve
 
-## Observation:
+#### Observation:
 
 Building the dist folder with the following command will make the server to serve the website from the wrong base-href. That is why when testing locally, you only build your site using "ng build": 
 ng build --prod --base-href https://alextelespanwork.github.io/my-cool-proj/
@@ -68,7 +70,7 @@ ng build --prod --base-href https://alextelespanwork.github.io/my-cool-proj/
 
 # GIT Cheats
 
-## To create a new repository:
+### To create a new repository:
 1--login to your github.com account and create a new repository for your Angular project.
 
 2--then follow the commands similar to the ones below:
@@ -78,7 +80,7 @@ ng build --prod --base-href https://alextelespanwork.github.io/my-cool-proj/
 * git remote add origin https://github.com/alextelespanwork/my-cool-proj.git
 * git push -u origin master
 
-## GeneralCommands:  
+### GeneralCommands:  
 1--check for changes
 * git status
 * git status -s  (dsiplays less information prefixed with the change)
@@ -114,7 +116,7 @@ ng build --prod --base-href https://alextelespanwork.github.io/my-cool-proj/
 11--
 * git reset c14809fafb08b9e96ff2879999ba8c807d10fb07
 
-## New Branch:
+### New Branch:
 1--create a branch (git will move you to that branch, off of the master branch)
 * git checkout -b <my branch name>
 
@@ -124,7 +126,7 @@ ng build --prod --base-href https://alextelespanwork.github.io/my-cool-proj/
 3--to switch branches back to the master branch. 
 * git checkout master 
 
-## Various ways to remove local Git changes:
+### Various ways to remove local Git changes:
 - Type 1. Staged Tracked files (Those that are moved to staging area/ Added to index)
 - Type 2. Unstaged Tracked files (modified files)
 - Type 3. Unstaged UnTracked files a.k.a UnTracked files (new files. Always unstaged. If staged, that means they are tracked)
@@ -144,12 +146,12 @@ ng build --prod --base-href https://alextelespanwork.github.io/my-cool-proj/
 4--removes all changes [Type 1, Type 2, Type 3]
 * git stash -u 
 
-##Conclusion:
+###Conclusion:
 We can use either:
 1 combination of `git clean -f` and `git reset --hard` 
 OR
 2 `git stash –u`
-### Note: Stashing, as the word means 'Store (something) safely and secretly in a specified place.' This can always be retrieved using git stash pop.
+##### Note: Stashing, as the word means 'Store (something) safely and secretly in a specified place.' This can always be retrieved using git stash pop.
 
 5--discarding all local commits on this branch [Removing local commits]
 * git reset --hard origin/master [if local branch is master]
@@ -157,14 +159,14 @@ OR
 6--revert a commit already pushed to a remote repository
 * git revert ab12cd15
 
-## Delete a previous commit from local branch and remote branch:
+### Delete a previous commit from local branch and remote branch:
 1--deleting that commit from local branch
 *git reset --hard HEAD~1
 
 2--for deleting from remote branch, both the above and the following must be executed
 * git push origin HEAD –force
 
-## Remove local git merge:
+### Remove local git merge:
 Master branch merged with a newly working branch phase2:
 * git status
 * --On branch master
@@ -180,7 +182,7 @@ Master branch merged with a newly working branch phase2:
     OR 
 * git reset --hard 9a88396f51e2a068bb7 [this is the one that was present before all your merge commits happened]
 
-## Stashing Your Work 
+### Stashing Your Work 
 <a href="https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning">More Details</a>
 
 By default, git stash will only store files that are already in the index. If you specify --include-untracked or -u, Git will also stash any untracked files you have created.
