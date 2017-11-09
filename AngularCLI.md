@@ -6,11 +6,14 @@
 * npm i -g angular-cli-ghpages
 * npm i --save-dev angular-cli-ghpages
 
-2--to build the Angular project 
+2--to build the Angular project (Creates a /dist folder. Adding the production flag, makes use of uglifying and tree-shaking)
+* ng build
 * ng build --prod 
 
 3--to build the angular project for github using angular cli 
 * ng build --prod --base-href https://alextelespanwork.github.io/my-cool-proj/
+
+#### Deploying your build
 
 4--!!!You're only able to use the angular-cli-ghpages CLI if you have a /dist folder. If you do, you can then run: 
 * ngh  
